@@ -1,2 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.bg-red {
+  background-color: #ec082b;
+}
 
-/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+.number {
+  color: #c8c3c3;
+  font-size: 40px;
+  font-weight: 100;
+  padding-top: 40px;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  color: #515050;
+  padding: 40px 0px;
+}
+body .container {
+  max-width: 1188px;
+}
+body header nav .navbar-nav .nav-item .nav-link {
+  color: black;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  margin: 2px;
+}
+body header nav .navbar-nav .nav-item .nav-link:after {
+  content: " ";
+  border-bottom: 2px solid #fff;
+  display: block;
+  visibility: hidden;
+  width: 0%;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  transition: 0.5s;
+}
+body header nav .navbar-nav .nav-item .nav-link:hover::after {
+  visibility: visible;
+  width: 100%;
+}
+body header nav .navbar-nav .nav-item .nav-link.active::after {
+  visibility: visible;
+  width: 100%;
+}
+body main .who-we-are {
+  background-color: #fbf9fa;
+}
+body main .who-we-are .content-left p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+}
+body main .who-we-are .content-left a {
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 10px 40px;
+}
+body main .who-we-are .img-right {
+  width: 100%;
+  position: relative;
+}
+body main .who-we-are .img-right img {
+  position: absolute;
+  align-items: center;
+}
+body main .some-creative-work .first-col {
+  background-color: #fbf9fa;
+  padding: 10px 40px;
+}/*# sourceMappingURL=style.css.map */
