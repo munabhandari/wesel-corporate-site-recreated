@@ -100,12 +100,72 @@ body {
                 }
             }
         }
-        .some-creative-work{
+
+        .some-creative-work{        
+            .img-right{
+                img:hover{ 
+                   background-color: rgba(0, 0, 0, 0.7);                  
+                }
+            }
             .first-col{
                 background-color: $light-grey;
-                padding: 10px 40px;
+                padding: 5px 40px;
+            }
+            .row >div{
+                height: 280px;               
+            }  
+            .img-height{
+                img{
+                    height: 280px;
+                }              
+            }                    
+        }
+
+        .our-skills{
+            background-color: $light-grey;
+            .left-col{
+                padding-left: 160px;
+                padding-right: 113px;
+            }
+            .progress-container{ 
+                .progress{
+                    height: 6px;
+                }              
+                    .green{
+                        color:  #0dc184;                      
+                    }  
+                    .bg-green{
+                        background-color: #0dc184;
+                    }
+                    .blue{
+                        color:   #15a2dc;                      
+                    }  
+                    .bg-blue{
+                        background-color:  #15a2dc;
+                    }   
+                    .pink{
+                        color:   #ea236f;                      
+                    }  
+                    .bg-pink{
+                        background-color:  #ea236f;
+                    } 
+                    .yellow{
+                        color:    #ffb500;                      
+                    }  
+                    .bg-yellow{
+                        background-color:   #ffb500;
+                    }                                 
+            }
+            .right-img-container{
+                width: 100%;
+                height: auto;
+                
             }
         }
-        
-    }
+
+        .our-services{
+            
+        }
+       
+    } 
 }

@@ -80,7 +80,54 @@ body main .who-we-are .img-right img {
   position: absolute;
   align-items: center;
 }
+body main .some-creative-work .img-right img:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
 body main .some-creative-work .first-col {
   background-color: #fbf9fa;
-  padding: 10px 40px;
+  padding: 5px 40px;
+}
+body main .some-creative-work .row > div {
+  height: 280px;
+}
+body main .some-creative-work .img-height img {
+  height: 280px;
+}
+body main .our-skills {
+  background-color: #fbf9fa;
+}
+body main .our-skills .left-col {
+  padding-left: 160px;
+  padding-right: 113px;
+}
+body main .our-skills .progress-container .progress {
+  height: 6px;
+}
+body main .our-skills .progress-container .green {
+  color: #0dc184;
+}
+body main .our-skills .progress-container .bg-green {
+  background-color: #0dc184;
+}
+body main .our-skills .progress-container .blue {
+  color: #15a2dc;
+}
+body main .our-skills .progress-container .bg-blue {
+  background-color: #15a2dc;
+}
+body main .our-skills .progress-container .pink {
+  color: #ea236f;
+}
+body main .our-skills .progress-container .bg-pink {
+  background-color: #ea236f;
+}
+body main .our-skills .progress-container .yellow {
+  color: #ffb500;
+}
+body main .our-skills .progress-container .bg-yellow {
+  background-color: #ffb500;
+}
+body main .our-skills .right-img-container {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
