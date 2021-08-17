@@ -76,13 +76,10 @@ body main .who-we-are .content-left a {
   letter-spacing: 2px;
   padding: 10px 40px;
 }
-body main .who-we-are .img-right {
-  width: 100%;
-  position: relative;
-}
-body main .who-we-are .img-right img {
-  position: absolute;
+body main .who-we-are .img-holder {
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 body main .some-creative-work .row .col-md-3 {
   width: 30% !important;
@@ -145,4 +142,48 @@ body main .our-skills .progress-container .bg-yellow {
 body main .our-skills .right-img-container {
   width: 100%;
   height: auto;
+}
+body main .our-services .content-left {
+  min-height: 509px;
+}
+body main .our-services .inner-container {
+  position: relative;
+  overflow: hidden;
+}
+body main .our-services .inner-container:hover h3 {
+  opacity: 1;
+}
+body main .our-services .inner-container a {
+  display: block;
+  height: 279px;
+  background-size: cover;
+}
+body main .our-services .inner-container h3 {
+  transition: 0.5s;
+  opacity: 0;
+  padding: 0;
+  color: #fff;
+  line-height: 279px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body main .our-services .inner-container .img1 {
+  background-repeat: no-repeat;
+  background-image: url(https://quomodosoft.com/html/wesal/demo/images/blog/image-1.jpg);
+}
+body main .our-services .inner-container .img2 {
+  background-repeat: no-repeat;
+  background-image: url(https://quomodosoft.com/html/wesal/demo/images/blog/image-2.jpg);
+}
+body main .our-services .inner-container .img3 {
+  background-repeat: no-repeat;
+  background-image: url(https://quomodosoft.com/html/wesal/demo/images/blog/image-3.jpg);
+}
+body main .our-services .inner-container .img4 {
+  background-repeat: no-repeat;
+  background-image: url(https://quomodosoft.com/html/wesal/demo/images/blog/image-4.jpg);
 }/*# sourceMappingURL=style.css.map */

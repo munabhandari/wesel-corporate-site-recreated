@@ -92,28 +92,27 @@ body {
                 }
             }
 
-            .img-right {
-                width: 100%;
-                position: relative;
-
-                img {
-                    position: absolute;
-                    align-items: center;
-                }
+            .img-holder {
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
 
         .some-creative-work {
             .row {
-                .col-md-3{
+                .col-md-3 {
                     width: 30% !important;
                 }
-                .col-md-5{
+
+                .col-md-5 {
                     width: 40% !important;
                 }
-                .col-md-6{
+
+                .col-md-6 {
                     width: 60% !important;
                 }
+
                 &>:not(:first-child) {
                     a {
                         overflow: hidden;
@@ -195,7 +194,60 @@ body {
             }
         }
 
-        .our-services {}
+        .our-services {
+            .content-left{
+                min-height: 509px;
+            }
+            .inner-container {
+                &:hover{
+                    h3{
+                    opacity: 1;
+                    }
+                }
+                a {
+                    display: block;
+                    height: 279px;
+                    background-size: cover;
+                }
+
+                position: relative;
+                overflow: hidden;
+
+                h3 {
+                    transition: 0.5s;
+                    opacity: 0;
+                    padding: 0;
+                    color: $white;
+                    line-height: 279px;
+                    text-align: center;
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+
+                .img1 {
+                    background-repeat: no-repeat;
+                    background-image: url(https://quomodosoft.com/html/wesal/demo/images/blog/image-1.jpg);
+                }
+
+                .img2 {
+                    background-repeat: no-repeat;
+                    background-image: url(https://quomodosoft.com/html/wesal/demo/images/blog/image-2.jpg);
+                }
+
+                .img3 {
+                    background-repeat: no-repeat;
+                    background-image: url(https://quomodosoft.com/html/wesal/demo/images/blog/image-3.jpg);
+                }
+
+                .img4 {
+                    background-repeat: no-repeat;
+                    background-image: url(https://quomodosoft.com/html/wesal/demo/images/blog/image-4.jpg);
+                }
+            }
+        }
 
     }
 }
