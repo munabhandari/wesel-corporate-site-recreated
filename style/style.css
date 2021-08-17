@@ -3,6 +3,10 @@
   background-color: #ec082b;
 }
 
+.bg-light-grey {
+  background-color: #fbf9fa;
+}
+
 .number {
   color: #c8c3c3;
   font-size: 40px;
@@ -80,18 +84,28 @@ body main .who-we-are .img-right img {
   position: absolute;
   align-items: center;
 }
-body main .some-creative-work .img-right img:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+body main .some-creative-work .row .col-md-3 {
+  width: 30% !important;
 }
-body main .some-creative-work .first-col {
-  background-color: #fbf9fa;
-  padding: 5px 40px;
+body main .some-creative-work .row .col-md-5 {
+  width: 40% !important;
 }
-body main .some-creative-work .row > div {
-  height: 280px;
+body main .some-creative-work .row .col-md-6 {
+  width: 60% !important;
 }
-body main .some-creative-work .img-height img {
-  height: 280px;
+body main .some-creative-work .row > :not(:first-child) a {
+  overflow: hidden;
+  height: 312px;
+  display: block;
+  overflow: hidden;
+  background-color: black;
+}
+body main .some-creative-work .row > :not(:first-child) a img {
+  min-height: 100%;
+  min-width: 100%;
+}
+body main .some-creative-work .row > :not(:first-child) a:hover img {
+  opacity: 0.5;
 }
 body main .our-skills {
   background-color: #fbf9fa;

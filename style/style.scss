@@ -91,81 +91,110 @@ body {
                     padding: 10px 40px;
                 }
             }
-            .img-right{
+
+            .img-right {
                 width: 100%;
                 position: relative;
-                img{
+
+                img {
                     position: absolute;
                     align-items: center;
                 }
             }
         }
 
-        .some-creative-work{        
-            .img-right{
-                img:hover{ 
-                   background-color: rgba(0, 0, 0, 0.7);                  
+        .some-creative-work {
+            .row {
+                .col-md-3{
+                    width: 30% !important;
+                }
+                .col-md-5{
+                    width: 40% !important;
+                }
+                .col-md-6{
+                    width: 60% !important;
+                }
+                &>:not(:first-child) {
+                    a {
+                        overflow: hidden;
+                        height: 312px;
+
+                        img {
+                            min-height: 100%;
+                            min-width: 100%;
+                        }
+
+
+                        display: block;
+                        overflow: hidden;
+                        background-color: black;
+
+                        &:hover {
+                            img {
+                                opacity: 0.5;
+                            }
+                        }
+
+                    }
                 }
             }
-            .first-col{
-                background-color: $light-grey;
-                padding: 5px 40px;
-            }
-            .row >div{
-                height: 280px;               
-            }  
-            .img-height{
-                img{
-                    height: 280px;
-                }              
-            }                    
+
         }
 
-        .our-skills{
+        .our-skills {
             background-color: $light-grey;
-            .left-col{
+
+            .left-col {
                 padding-left: 160px;
                 padding-right: 113px;
             }
-            .progress-container{ 
-                .progress{
+
+            .progress-container {
+                .progress {
                     height: 6px;
-                }              
-                    .green{
-                        color:  #0dc184;                      
-                    }  
-                    .bg-green{
-                        background-color: #0dc184;
-                    }
-                    .blue{
-                        color:   #15a2dc;                      
-                    }  
-                    .bg-blue{
-                        background-color:  #15a2dc;
-                    }   
-                    .pink{
-                        color:   #ea236f;                      
-                    }  
-                    .bg-pink{
-                        background-color:  #ea236f;
-                    } 
-                    .yellow{
-                        color:    #ffb500;                      
-                    }  
-                    .bg-yellow{
-                        background-color:   #ffb500;
-                    }                                 
+                }
+
+                .green {
+                    color: #0dc184;
+                }
+
+                .bg-green {
+                    background-color: #0dc184;
+                }
+
+                .blue {
+                    color: #15a2dc;
+                }
+
+                .bg-blue {
+                    background-color: #15a2dc;
+                }
+
+                .pink {
+                    color: #ea236f;
+                }
+
+                .bg-pink {
+                    background-color: #ea236f;
+                }
+
+                .yellow {
+                    color: #ffb500;
+                }
+
+                .bg-yellow {
+                    background-color: #ffb500;
+                }
             }
-            .right-img-container{
+
+            .right-img-container {
                 width: 100%;
                 height: auto;
-                
+
             }
         }
 
-        .our-services{
-            
-        }
-       
-    } 
+        .our-services {}
+
+    }
 }
