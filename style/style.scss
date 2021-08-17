@@ -17,7 +17,6 @@ body {
     h1,
     h2,
     h3,
-    h4,
     h5,
     h6 {
         font-weight: 700;
@@ -123,7 +122,6 @@ body {
                             min-width: 100%;
                         }
 
-
                         display: block;
                         overflow: hidden;
                         background-color: black;
@@ -195,15 +193,22 @@ body {
         }
 
         .our-services {
-            .content-left{
+            .content-left {
                 min-height: 509px;
             }
+
             .inner-container {
-                &:hover{
-                    h3{
-                    opacity: 1;
+                &:hover {
+
+                    // a{
+                    //     transform: scale(1.3);
+                    //     transition: 1.3s;
+                    // }
+                    h3 {
+                        opacity: 1;
                     }
                 }
+
                 a {
                     display: block;
                     height: 279px;
@@ -247,6 +252,145 @@ body {
                     background-image: url(https://quomodosoft.com/html/wesal/demo/images/blog/image-4.jpg);
                 }
             }
+        }
+
+        .designers {
+            .img-holder {
+                .btn {
+                    border-radius: 0 !important;
+                }
+
+                .inner-container {
+                    position: relative;
+
+                    &:hover {
+                        .ul-cont {
+                            opacity: 1;
+                        }
+                    }
+
+                    .ul-cont {
+                        opacity: 0;
+                        transition: 0.5s;
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        right: 0;
+                        top: 0;
+                        background-color: rgba(0, 0, 0, 0.5);
+
+                        .icons-groups {
+                            position: absolute;
+                            top: 20px;
+                            right: 10px;
+
+                            li {
+                                list-style: none;
+
+                                a {
+                                    color: white;
+                                    display: inline-block;
+                                    padding: 10px;
+
+                                    &:hover{
+                                        color: $red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            // .inner-container {
+            //     &:hover{              
+            //         h3{
+            //         opacity: 1;          
+            //         }                    
+            //     }
+            //     a {
+            //         display: block;
+            //         height: 365px;
+            //         background-size: cover;
+            //     }
+
+            //     position: relative;
+            //     overflow: hidden;
+
+            //     .icons-groups{
+            //         &a{
+            //         transition: 0.5s;
+            //         opacity: 0;
+            //         padding: 0;
+            //         color: $white;
+            //         line-height: 279px;
+            //         text-align: center;
+            //         position: absolute;
+            //         top: 0;
+            //         height: 100%;
+            //         width: 100%;
+            //         background-color: rgba(0, 0, 0, 0.5);
+            //     }
+            // }
+
+            // .img1 {
+            //     background-repeat: no-repeat;
+            //     background-image: url(https://quomodosoft.com/html/wesal/demo/images/team/image-1.jpg);
+            // }
+
+            // .img2 {
+            //     background-repeat: no-repeat;
+            //     background-image: url(https://quomodosoft.com/html/wesal/demo/images/blog/image-2.jpg);
+            // }
+
+            // .img3 {
+            //     background-repeat: no-repeat;
+            //     background-image: url(https://quomodosoft.com/html/wesal/demo/images/blog/image-3.jpg);
+            // }
+
+            // .img4 {
+            //     background-repeat: no-repeat;
+            //     background-image: url(https://quomodosoft.com/html/wesal/demo/images/blog/image-4.jpg);
+            // }
+
+        }
+
+        .our-prices {  
+                .standard{
+                    text-align: center;
+                    .rate{
+                        color: $red;
+                        font-size: 60px;
+                        font-weight: 600;               
+                        font-family: 'Open Sans', sans-serif;
+                    }
+                    a{
+                       border: 1px solid $red; 
+                       padding: 10px 39px;
+                       display: block;
+                       color: $red;
+                       font-size: 13px;
+                       letter-spacing: 2px;
+                       line-height: 1.8;
+                       &:hover{
+                           background-color: $red;
+                           color: $white;
+                       }
+                    }
+                    border-bottom: 4px solid $red;
+                    &:hover{
+                        border-bottom: 4px solid $red;
+                        transform: rotateY(10deg);
+                        transition: 0.1s; 
+                    }                 
+                } 
+                // & .col-last{                   
+                //         border-bottom: 0;
+                //         &:hover{
+                //             border-bottom: 4px solid $red;
+                //         }                                      
+                // }            
         }
 
     }

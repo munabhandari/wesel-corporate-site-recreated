@@ -7,11 +7,35 @@
   background-color: #fbf9fa;
 }
 
+h4 {
+  font-size: 18px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #333;
+}
+
 .number {
   color: #c8c3c3;
   font-size: 40px;
   font-weight: 100;
   padding-top: 40px;
+}
+
+.content-btm {
+  background-color: black;
+}
+.content-btm .btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.content-btm .btn:hover {
+  opacity: 0.9;
 }
 
 body {
@@ -27,7 +51,6 @@ body * {
 body h1,
 body h2,
 body h3,
-body h4,
 body h5,
 body h6 {
   font-weight: 700;
@@ -186,4 +209,67 @@ body main .our-services .inner-container .img3 {
 body main .our-services .inner-container .img4 {
   background-repeat: no-repeat;
   background-image: url(https://quomodosoft.com/html/wesal/demo/images/blog/image-4.jpg);
+}
+body main .designers .img-holder .btn {
+  border-radius: 0 !important;
+}
+body main .designers .img-holder .inner-container {
+  position: relative;
+}
+body main .designers .img-holder .inner-container:hover .ul-cont {
+  opacity: 1;
+}
+body main .designers .img-holder .inner-container .ul-cont {
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body main .designers .img-holder .inner-container .ul-cont .icons-groups {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+body main .designers .img-holder .inner-container .ul-cont .icons-groups li {
+  list-style: none;
+}
+body main .designers .img-holder .inner-container .ul-cont .icons-groups li a {
+  color: white;
+  display: inline-block;
+  padding: 10px;
+}
+body main .designers .img-holder .inner-container .ul-cont .icons-groups li a:hover {
+  color: #ec082b;
+}
+body main .our-prices .standard {
+  text-align: center;
+  border-bottom: 4px solid #ec082b;
+}
+body main .our-prices .standard .rate {
+  color: #ec082b;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+body main .our-prices .standard a {
+  border: 1px solid #ec082b;
+  padding: 10px 39px;
+  display: block;
+  color: #ec082b;
+  font-size: 13px;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+body main .our-prices .standard a:hover {
+  background-color: #ec082b;
+  color: #fff;
+}
+body main .our-prices .standard:hover {
+  border-bottom: 4px solid #ec082b;
+  transform: rotateY(10deg);
+  transition: 0.1s;
 }/*# sourceMappingURL=style.css.map */
