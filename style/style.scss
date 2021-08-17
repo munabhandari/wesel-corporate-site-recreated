@@ -142,7 +142,8 @@ body {
         }
 
         .our-skills {
-            background-color: $light-grey;
+            height: 610px;
+            overflow: hidden;
 
             .left-col {
                 padding-left: 160px;

@@ -108,7 +108,8 @@ body main .some-creative-work .row > :not(:first-child) a:hover img {
   opacity: 0.5;
 }
 body main .our-skills {
-  background-color: #fbf9fa;
+  height: 610px;
+  overflow: hidden;
 }
 body main .our-skills .left-col {
   padding-left: 160px;
