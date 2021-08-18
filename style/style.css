@@ -93,8 +93,15 @@ body h6 {
 body .container {
   max-width: 1188px;
 }
+body header {
+  height: 100vh;
+  overflow: hidden;
+}
+body header .triangle {
+  background: rgba(0, 0, 0, 0) linear-gradient(to right bottom, #ec082bd9 50%, transparent 50%) repeat scroll 0 0;
+}
 body header .sticky {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   left: 0;
   width: 100%;
@@ -119,14 +126,52 @@ body header .sticky {
     transform: translateY(0px);
   }
 }
-body header nav .navbar-nav .nav-item .nav-link {
+body header .banner img {
+  height: 100%;
+  width: 100%;
+}
+body header .banner .banner-content {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  top: 0;
+  width: 100%;
+  padding-top: 150px;
+}
+body header .banner .banner-content * {
+  color: #fff;
+}
+body header .banner .banner-content .download-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-repeat: no-repeat;
+  background: white;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 70%, white 70%, white 100%);
+  transition: 0.3s;
+}
+body header .banner .banner-content .download-button i {
+  color: #ec082b;
+}
+body header .banner .banner-content .download-button:hover {
+  background: linear-gradient(90deg, white 0%, white 100%);
+  color: #ec082b !important;
+}
+body header .container-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+body header .container-wrapper nav .navbar-nav .nav-item .nav-link {
   color: #fff;
   padding: 15px;
   text-align: center;
   position: relative;
   margin: 2px;
 }
-body header nav .navbar-nav .nav-item .nav-link:after {
+body header .container-wrapper nav .navbar-nav .nav-item .nav-link:after {
   content: " ";
   border-bottom: 2px solid #fff;
   display: block;
@@ -137,11 +182,11 @@ body header nav .navbar-nav .nav-item .nav-link:after {
   left: 0;
   transition: 0.5s;
 }
-body header nav .navbar-nav .nav-item .nav-link:hover::after {
+body header .container-wrapper nav .navbar-nav .nav-item .nav-link:hover::after {
   visibility: visible;
   width: 100%;
 }
-body header nav .navbar-nav .nav-item .nav-link.active::after {
+body header .container-wrapper nav .navbar-nav .nav-item .nav-link.active::after {
   visibility: visible;
   width: 100%;
 }
