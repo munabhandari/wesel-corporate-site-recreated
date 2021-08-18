@@ -417,4 +417,31 @@ body footer .footer-bottom ul li a {
 }
 body footer .footer-bottom ul li a:hover {
   color: #666;
+}
+
+@media only screen and (max-width: 600px) {
+  body #work .first-cell > div {
+    padding: 5px !important;
+    text-align: center;
+    font-size: 11px;
+  }
+  body #work .first-cell > div .number {
+    padding: 0 !important;
+  }
+  body #work .first-cell > div h3 {
+    padding: 0 !important;
+  }
+  body main .our-skills .left-col {
+    padding-left: 50px;
+  }
+  body main .right-img-container {
+    display: none;
+  }
+  body footer .footer-bottom {
+    text-align: center;
+  }
+  body footer .footer-bottom .ul-cont {
+    padding-top: 10px;
+    justify-content: center !important;
+  }
 }/*# sourceMappingURL=style.css.map */
