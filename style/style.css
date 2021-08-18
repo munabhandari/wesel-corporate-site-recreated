@@ -276,7 +276,8 @@ body main .our-prices .standard:hover {
 body main form {
   background-color: #fbf9fa;
 }
-body main form input[type=text], body main form [type=email] {
+body main form input[type=text],
+body main form [type=email] {
   padding: 5px 30px 5px 5px;
   border: 1px solid #333;
 }
@@ -306,10 +307,11 @@ body main form input[type=btn]:hover {
 }
 body footer .footer-top {
   background-color: #111111;
+}
+body footer .footer-top p {
   color: #999999;
 }
 body footer .footer-top .content {
-  align-self: center;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   line-height: 1.8;
@@ -319,4 +321,15 @@ body footer .footer-buttom {
 }
 body footer .footer-buttom p {
   color: #fff;
+}
+body footer .footer-buttom ul li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 10px;
+}
+body footer .footer-buttom ul li a {
+  color: #fff;
+}
+body footer .footer-buttom ul li a:hover {
+  color: #666;
 }/*# sourceMappingURL=style.css.map */

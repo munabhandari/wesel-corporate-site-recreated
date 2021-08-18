@@ -292,7 +292,7 @@ body {
                                     display: inline-block;
                                     padding: 10px;
 
-                                    &:hover{
+                                    &:hover {
                                         color: $red;
                                     }
                                 }
@@ -303,53 +303,62 @@ body {
 
             }
 
-          
+
 
         }
 
-        .our-prices {  
-                .standard{
-                    text-align: center;
-                    .rate{
-                        color: $red;
-                        font-size: 60px;
-                        font-weight: 600;               
-                        font-family: 'Open Sans', sans-serif;
+        .our-prices {
+            .standard {
+                text-align: center;
+
+                .rate {
+                    color: $red;
+                    font-size: 60px;
+                    font-weight: 600;
+                    font-family: 'Open Sans', sans-serif;
+                }
+
+                a {
+                    border: 1px solid $red;
+                    padding: 10px 39px;
+                    display: block;
+                    color: $red;
+                    font-size: 13px;
+                    letter-spacing: 2px;
+                    line-height: 1.8;
+
+                    &:hover {
+                        background-color: $red;
+                        color: $white;
                     }
-                    a{
-                       border: 1px solid $red; 
-                       padding: 10px 39px;
-                       display: block;
-                       color: $red;
-                       font-size: 13px;
-                       letter-spacing: 2px;
-                       line-height: 1.8;
-                       &:hover{
-                           background-color: $red;
-                           color: $white;
-                       }
-                    }
+                }
+
+                border-bottom: 4px solid $red;
+
+                &:hover {
                     border-bottom: 4px solid $red;
-                    &:hover{
-                        border-bottom: 4px solid $red;
-                        transform: rotateY(10deg);
-                        transition: 0.1s; 
-                    }                 
-                } 
-                // & .col-last{                   
-                //         border-bottom: 0;
-                //         &:hover{
-                //             border-bottom: 4px solid $red;
-                //         }                                      
-                // }            
+                    transform: rotateY(10deg);
+                    transition: 0.1s;
+                }
+            }
+
+            // & .col-last{                   
+            //         border-bottom: 0;
+            //         &:hover{
+            //             border-bottom: 4px solid $red;
+            //         }                                      
+            // }            
         }
 
-        form{
+        form {
             background-color: $light-grey;
-            input[type=text], [type=email]{
+
+            input[type=text],
+            [type=email] {
                 padding: 5px 30px 5px 5px;
-                border: 1px solid $grey-dark;              
+                border: 1px solid $grey-dark;
             }
+
             textarea {
                 width: 100%;
                 height: 150px;
@@ -360,43 +369,61 @@ body {
                 background-color: #f8f8f8;
                 font-size: 16px;
                 margin: 30px 0px;
-              }            
-                  
-              input[type=btn]{
-                  padding: 10px;
-                  background-color: $red;
-                  color: $white;
-                  border: none;
-                  font-family: 'Open Sans', sans-serif;
-                  font-size: 13px;
-                  letter-spacing: 2px;
-                  font-weight: 400;                 
-                  &:hover{
-                      opacity: 0.8;
-                  }
-              }
-            
-        }
-    }
+            }
 
-    footer{
-        .footer-top{
-            background-color: #111111;
-            color: #999999;
-            
-            .content{
-                align-self: center;
+            input[type=btn] {
+                padding: 10px;
+                background-color: $red;
+                color: $white;
+                border: none;
                 font-family: 'Open Sans', sans-serif;
                 font-size: 13px;
-                line-height: 1.8; 
-            }      
+                letter-spacing: 2px;
+                font-weight: 400;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+        }
+    }
+
+    footer {
+        .footer-top {
+            background-color: #111111;
+            p{             
+            color: #999999;
+            }
+
+            .content {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 13px;
+                line-height: 1.8;
+
+            }
         }
 
-    .footer-buttom{
-         background-color: $red;
-         p{
-             color: $white;
-         }
-    }
+        .footer-buttom {
+            background-color: $red;
+            
+            p {
+                color: $white;
+            }
+            ul{
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    padding-left: 10px;
+                    
+                    a{
+                        color: $white;                      
+                        &:hover{
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
