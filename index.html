@@ -15,48 +15,50 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/header-logo.png" alt="header-logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Work</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Team</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Price</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
+    <header class="bg-red">
+        <div class="container-wrapper">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/header-logo.png" alt="header-logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Work</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Price</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
 
         <section class="banner">
@@ -412,7 +414,7 @@
                     </div>
 
                     <div class="col-md-4">
-                        <div class="standard mt-5 py-3 px-5 pb-4 bg-light-grey">
+                        <div class="pricing first-card mt-5 py-3 px-5 pb-4 bg-light-grey">
                             <h4 class="text-uppercase py-4">Standard</h4>
                             <div class="rate py-4">$95</div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar imperdiet
@@ -421,8 +423,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-last">
-                        <div class="standard mt-5 py-3 px-5 pb-4 bg-light-grey">
+                    <div class="col-md-4">
+                        <div class="pricing mt-5 py-3 px-5 pb-4 bg-light-grey">
                             <h4 class="text-uppercase py-4">Basic</h4>
                             <div class="rate py-4">$35</div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar imperdiet
@@ -439,19 +441,19 @@
             <div class="container py-5">
                 <div class="row pt-5">
                     <div class="col-md-4">
-                        <input type="text" placeholder="Your Name">
+                        <input type="text" placeholder="Your Name" class="w-100 py-2">
                     </div>
                     <div class="col-md-4">
-                        <input type="email" placeholder="Email Address">
+                        <input type="email" placeholder="Email Address" class="w-100 py-2">
                     </div>
                     <div class="col-md-4">
-                        <input type="text" placeholder="Subject">
+                        <input type="text" placeholder="Subject" class="w-100 py-2">
                     </div>
                     <div class="col-md-12">
-                        <textarea>Message here...</textarea>
+                        <textarea class="w-100 py-2 bg-white" placeholder="Message here..."></textarea>
                     </div>
-                    <div class="col-md-6 pb-5">
-                        <input type="btn"  value="Send Message">
+                    <div class="col-md-3 pb-5">
+                        <input type="btn" value="Send Message" class="w-100 text-center py-3">
                     </div>
                 </div>
 
@@ -464,32 +466,32 @@
             <div class="container">
                 <div class="content py-5 text-center">
                     <img src="images/footer-logo.png" alt="footer-logo">
-                    <p class="col-md-6 offset-md-3 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elitVestibulum
+                    <p class="col-md-6 offset-md-3 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elitVestibulum
                         pulvinar imperdiet elementum.</p>
                 </div>
             </div>
         </div>
-        <div class="footer-buttom py-3">
+        <div class="footer-bottom py-3">
             <div class="container">
                 <div class="row">
-                <div class="col-md-4">              
-                    <p>Copyright @ MAI by wdmusa91 All Rights Reserved</p>
-                </div>
+                    <div class="col-md-4">
+                        <p>Copyright @ MAI by wdmusa91 All Rights Reserved</p>
+                    </div>
 
-                <div class="col-md-4 offset-md-4">              
-                    <div class="ul-cont">
-                        <ul class="icons-groups">
-                            <li><a href="/"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="/"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="/"><i class="fab fa-github-alt"></i></a></li>
-                            <li><a href="/"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="/"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="/"><i class="fab fa-dribbble"></i></a></li>
-                        </ul>
+                    <div class="col-md-4 offset-md-4">
+                        <div class="ul-cont d-flex justify-content-end">
+                            <ul class="icons-groups">
+                                <li><a href="/"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="/"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="/"><i class="fab fa-github-alt"></i></a></li>
+                                <li><a href="/"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="/"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="/"><i class="fab fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
-            </div>
             </div>
         </div>
     </footer>
@@ -500,6 +502,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 
 </body>
 

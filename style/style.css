@@ -7,6 +7,38 @@
   background-color: #fbf9fa;
 }
 
+.green {
+  color: #0dc184;
+}
+
+.bg-green {
+  background-color: #0dc184;
+}
+
+.blue {
+  color: #15a2dc;
+}
+
+.bg-blue {
+  background-color: #15a2dc;
+}
+
+.pink {
+  color: #ea236f;
+}
+
+.bg-pink {
+  background-color: #ea236f;
+}
+
+.yellow {
+  color: #ffb500;
+}
+
+.bg-yellow {
+  background-color: #ffb500;
+}
+
 h4 {
   font-size: 18px;
 }
@@ -61,8 +93,34 @@ body h6 {
 body .container {
   max-width: 1188px;
 }
+body header .sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #ec082b;
+  -webkit-animation: smoothScroll 1s forwards;
+          animation: smoothScroll 1s forwards;
+}
+@-webkit-keyframes smoothScroll {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 body header nav .navbar-nav .nav-item .nav-link {
-  color: black;
+  color: #fff;
   padding: 15px;
   text-align: center;
   position: relative;
@@ -138,30 +196,6 @@ body main .our-skills .left-col {
 body main .our-skills .progress-container .progress {
   height: 6px;
 }
-body main .our-skills .progress-container .green {
-  color: #0dc184;
-}
-body main .our-skills .progress-container .bg-green {
-  background-color: #0dc184;
-}
-body main .our-skills .progress-container .blue {
-  color: #15a2dc;
-}
-body main .our-skills .progress-container .bg-blue {
-  background-color: #15a2dc;
-}
-body main .our-skills .progress-container .pink {
-  color: #ea236f;
-}
-body main .our-skills .progress-container .bg-pink {
-  background-color: #ea236f;
-}
-body main .our-skills .progress-container .yellow {
-  color: #ffb500;
-}
-body main .our-skills .progress-container .bg-yellow {
-  background-color: #ffb500;
-}
 body main .our-skills .right-img-container {
   width: 100%;
   height: auto;
@@ -173,8 +207,14 @@ body main .our-services .inner-container {
   position: relative;
   overflow: hidden;
 }
+body main .our-services .inner-container:hover a {
+  transform: scale(1.08);
+  transition: 0.5s;
+  z-index: 1;
+}
 body main .our-services .inner-container:hover h3 {
   opacity: 1;
+  z-index: 2;
 }
 body main .our-services .inner-container a {
   display: block;
@@ -245,17 +285,16 @@ body main .designers .img-holder .inner-container .ul-cont .icons-groups li a {
 body main .designers .img-holder .inner-container .ul-cont .icons-groups li a:hover {
   color: #ec082b;
 }
-body main .our-prices .standard {
+body main .our-prices .pricing {
   text-align: center;
-  border-bottom: 4px solid #ec082b;
 }
-body main .our-prices .standard .rate {
+body main .our-prices .pricing .rate {
   color: #ec082b;
   font-size: 60px;
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
 }
-body main .our-prices .standard a {
+body main .our-prices .pricing a {
   border: 1px solid #ec082b;
   padding: 10px 39px;
   display: block;
@@ -264,14 +303,15 @@ body main .our-prices .standard a {
   letter-spacing: 2px;
   line-height: 1.8;
 }
-body main .our-prices .standard a:hover {
+body main .our-prices .pricing a:hover {
   background-color: #ec082b;
   color: #fff;
 }
-body main .our-prices .standard:hover {
+body main .our-prices .pricing:hover, body main .our-prices .pricing.first-card {
   border-bottom: 4px solid #ec082b;
   transform: rotateY(10deg);
   transition: 0.1s;
+  border-bottom: 4px solid #ec082b;
 }
 body main form {
   background-color: #fbf9fa;
@@ -316,20 +356,20 @@ body footer .footer-top .content {
   font-size: 13px;
   line-height: 1.8;
 }
-body footer .footer-buttom {
+body footer .footer-bottom {
   background-color: #ec082b;
 }
-body footer .footer-buttom p {
+body footer .footer-bottom p {
   color: #fff;
 }
-body footer .footer-buttom ul li {
+body footer .footer-bottom ul li {
   list-style: none;
   display: inline-block;
   padding-left: 10px;
 }
-body footer .footer-buttom ul li a {
+body footer .footer-bottom ul li a {
   color: #fff;
 }
-body footer .footer-buttom ul li a:hover {
+body footer .footer-bottom ul li a:hover {
   color: #666;
 }/*# sourceMappingURL=style.css.map */
