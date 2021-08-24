@@ -6,3 +6,8 @@ $(window).scroll(function(){
 
     }
 })
+
+$('header .nav-link').click(function(){
+    $('header .nav-link.active').removeClass('active');
+    $(this).addClass('active');
+})
